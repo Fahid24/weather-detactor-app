@@ -1,0 +1,121 @@
+p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(243, 241, 241);
+    text-shadow: 1px 1px #202020;
+}
+
+.main {
+    margin: 20px 0;
+    display: grid;
+    justify-items: center;
+    text-align:center ;
+    
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* position: fixed;
+    top: 10vh; */
+    
+    
+}
+
+.weather-icon{
+    
+    display: grid;
+    justify-items: center;
+    font-size: 27px;
+}
+.details{
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(240, 171, 24, 0.068) 100%
+    );
+    border: 1px solid white;
+    border-radius: 20px;
+    padding:20px 30px;
+}
+.des {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+button {
+    background: white;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.title1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.icon {
+    width: 25px;
+}
+
+.weather {
+    display: grid;
+    justify-items: center;
+    margin-top: -20px;
+}
+.radio{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background: linear-gradient(
+      -180deg,
+      rgba(231, 131, 16, 0.692) 50%,
+      
+    );    line-height: 0;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.weather-input {
+    width: 70vh;
+    height: 5vh;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .weather-input{
+        max-width: 200px;
+    }
+    .radio{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+    }
+  }
