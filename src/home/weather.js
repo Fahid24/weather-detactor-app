@@ -131,10 +131,10 @@ const Weather = () => {
                             placeholder="Enter Location"
                             type="text"
                             name="city"
-                            required
+                            
                         // onKeyPress={searchLocation}
                         />
-                        <button type="submit" onClick={searchLocation}>
+                        <button disabled={!location} type="submit" onClick={searchLocation}>
                             <img className="icon" src={icon} alt="" />
                         </button>
                     </form>
